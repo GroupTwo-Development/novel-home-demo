@@ -48,3 +48,4 @@ wp-config.php
 
 # …except our custom theme:
 !/wp-content/themes/novel-home
+!.github/*
