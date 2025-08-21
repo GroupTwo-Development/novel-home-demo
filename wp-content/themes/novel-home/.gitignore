@@ -1,0 +1,21 @@
+# Bud build outputs
+/public/
+/.budfiles/
+
+# Node / Composer deps
+node_modules/
+vendor/
+
+# Lock files (if you don’t want them in repo)
+pnpm-lock.yaml
+yarn.lock
+package-lock.json
+composer.lock
+
+# OS/editor junk
+.DS_Store
+Thumbs.db
+*.log
+*.swp
+.idea/
+.vscode/

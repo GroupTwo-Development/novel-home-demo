@@ -1,0 +1,50 @@
+# WordPress - ignore core, configuration, examples, uploads and logs.
+# https://github.com/github/gitignore/blob/main/WordPress.gitignore
+
+# Core
+/wp-admin/
+/wp-includes/
+/index.php
+/license.txt
+/readme.html
+/wp-*.php
+/xmlrpc.php
+
+# wp-content specifics
+/wp-content/index.php
+/wp-content/languages
+/wp-content/plugins/
+/wp-content/mu-plugins/
+/wp-content/uploads/
+/wp-content/cache/
+/wp-content/ai1wm-backups
+/wp-content/smush-webp
+/wp-content/themes/index.php
+/wp-content/themes/.DS_Store
+/wp-content/themes/cache
+
+# Configuration
+wp-config.php
+/.htaccess
+/db.php
+
+# Example themes/plugins
+/wp-content/themes/twenty*/
+/wp-content/plugins/hello.php
+
+# Log/OS/editor files
+*.log
+*.DS_Store
+/.idea
+.vscode
+/wp-content/.vscode
+
+# Node / Composer
+/node_modules
+
+# --- THEME WHITELIST ---
+# Ignore all themes by default…
+/wp-content/themes/*
+
+# …except our custom theme:
+!/wp-content/themes/novel-home
