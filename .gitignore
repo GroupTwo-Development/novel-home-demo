@@ -1,62 +1,50 @@
-# Wordpress - ignore core, configuration, examples, uploads and logs.
+# WordPress - ignore core, configuration, examples, uploads and logs.
 # https://github.com/github/gitignore/blob/main/WordPress.gitignore
 
 # Core
-#
-# Note: if you want to stage/commit WP core files
-# you can delete this whole section/until Configuration.
 /wp-admin/
-/wp-content/index.php
-/wp-content/languages
-/wp-content/plugins/
-/wp-content/themes/index.php
 /wp-includes/
 /index.php
 /license.txt
 /readme.html
 /wp-*.php
 /xmlrpc.php
+
+# wp-content specifics
+/wp-content/index.php
+/wp-content/languages
+/wp-content/plugins/
+/wp-content/mu-plugins/
+/wp-content/uploads/
+/wp-content/cache/
 /wp-content/ai1wm-backups
 /wp-content/smush-webp
-/db.php
+/wp-content/themes/index.php
 /wp-content/themes/.DS_Store
-
+/wp-content/themes/cache
 
 # Configuration
 wp-config.php
+/.htaccess
+/db.php
 
-# Example themes
+# Example themes/plugins
 /wp-content/themes/twenty*/
-
-# Example plugin
 /wp-content/plugins/hello.php
 
-# Uploads
-/wp-content/uploads/
-
-# Log files
+# Log/OS/editor files
 *.log
 *.DS_Store
 /.idea
-/wp-content/.vscode
 .vscode
+/wp-content/.vscode
 
-# htaccess
-/.htaccess
+# Node / Composer
 /node_modules
-/wp-content/themes/cache
-/wp-content/themes/novel-home/vendor
-/wp-content/cache/
 
+# --- THEME WHITELIST ---
+# Ignore all themes by default…
+/wp-content/themes/*
 
-# All plugins
-#
-# Note: If you wish to whitelist plugins,
-# uncomment the next line
-#/wp-content/plugins
-
-# All themes
-#
-# Note: If you wish to whitelist themes,
-# uncomment the next line
-#/wp-content/themes
+# …except our custom theme:
+!/wp-content/themes/novel-home
